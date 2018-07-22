@@ -9,5 +9,5 @@ To be included:
     3. Enter completed run (distance and time)
     4. Statistics over completed runs (total distance, total time, calories burnt)
 
-Menu and calendar to be view through terminal. Future GUI implementation.
+Menu and calendar to be viewed through terminal. Future GUI implementation.
 
