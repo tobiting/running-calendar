@@ -1,5 +1,6 @@
 # creating the main menu for running calendar app
 import sys
+import database_handler     # module for database read and write functions
 
 
 def main():
@@ -8,7 +9,6 @@ def main():
     this should be printed and menu() should be called again. 5 exits the app. All other options
     should call the respective function. Until the functions are written, print statements and a
     menu() call should be in its place to verify correct behavior.
-    :return:
     """
     print('.....MAIN MENU.....')
     print('1. Plan new run')
@@ -30,9 +30,7 @@ def main():
         main()
         #next_run()
     elif choice == '3':
-        print('Completed run chosen ...')
-        main()
-        #completed_run()
+        database_handler.completed_run()
     elif choice == '4':
         print('See statistics chosen  ...')
         main()
