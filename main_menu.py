@@ -1,6 +1,7 @@
 # creating the main menu for running calendar app
 import sys
 import database_handler     # module for database read and write functions
+import data_statistics
 
 
 def main():
@@ -32,9 +33,7 @@ def main():
     elif choice == '3':
         database_handler.completed_run()
     elif choice == '4':
-        print('See statistics chosen  ...')
-        main()
-        #run_statistics()
+        data_statistics.run_statistics()
     elif choice == '5':
         sys.exit()
     else:

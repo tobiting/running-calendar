@@ -82,7 +82,9 @@ def completed_run():
               (new_run_id, str(datetime.date.today()), run_distance, run_time))
 
     # Print out current TABLE entries
-    #c.execute("SELECT * FROM run_data")
+    #c.execute("SELECT run_id FROM run_data")
+    #print(c.fetchall())
+    #c.execute("SELECT run_distance FROM run_data")
     #print(c.fetchall())
 
     # Commit changes to database, close connection and go back to main menu
